@@ -4,6 +4,8 @@ import Card from './Card';
 import Form from './Form';
 import Header from './Header';
 import Feedback from './Feedback';
+import Contact from './Contact';
+
 export default function App() {
 
   const [getAddress,setAddress] = useState("salman@gmail.com")
@@ -17,6 +19,7 @@ export default function App() {
       <div><Feedback getAddress={getAddress} addressHandler={addressHandler}/></div>
       <div>
       <Card productName={getAddress} color="blue" amount="4000" />
+      <Contact/>
       </div>
   
    
