@@ -1,6 +1,6 @@
 import React from 'react';
 import './Table.css';
-function Table(){
+function Table(props){
 
   return (<div>
     <table className="table"> 
@@ -10,9 +10,9 @@ function Table(){
         <th>Address</th>
       </tr>
       <tr>
-        <td>salman</td>
-        <td>44</td>
-        <td>chennai</td>
+        <td>{props.firstName}</td>
+        <td>{props.age}</td>
+        <td>{props.address}</td>
       </tr>
     </table>
     </div>)
